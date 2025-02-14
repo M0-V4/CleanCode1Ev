@@ -1,4 +1,4 @@
-package EJ2_NUEVO;
+package EJ2_ANTIGUO;
 
 import java.util.Arrays;
 import java.util.Scanner;

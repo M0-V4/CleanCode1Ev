@@ -1,4 +1,4 @@
-package EJ2_NUEVO;
+package EJ2_ANTIGUO;
 
 public class Figuras{
     private tipo tipos;
