@@ -1,4 +1,4 @@
-package EJ2;
+package EJ2_NUEVO;
 
 public enum Tipo {
     TRIANGULO(1), CUADRADO(2), CIRCULO(3);
