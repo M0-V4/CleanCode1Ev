@@ -7,12 +7,16 @@ public class Circulo implements Geometria{
     private double area;
     private double perimetro;
     private Tipo tip = Tipo.CIRCULO;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Aqui cojera las medidas del circulo
     @Override
     public void Medidas(double ancho, double alto){
         this.alto = alto;
         this.ancho = ancho;
         this.radio = (int)(Math.min(ancho, alto)/2);
     }
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Aqui se dibujara el circulo y medira el area y el perimetro del circulo
     @Override
     public void Mostrar(){
         for(int i = -radio; i < radio; i++){
@@ -27,6 +31,8 @@ public class Circulo implements Geometria{
         this.area = Math.PI * this.radio * this.radio;
         this.perimetro = 2 * Math.PI * this.radio;
     }
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Aqui se mostrara la informacion completa del circulo
     @Override
     public void MostrarInformacion(){
         System.out.println("Tipo de figura: " + this.tip + "\nALTURA: " + this.alto +

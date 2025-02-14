@@ -1,4 +1,4 @@
-package EJ2;
+package EJ2_NUEVO;
 
 public class Cuadrado implements Geometria{
     private double ancho = 0;
@@ -29,9 +29,5 @@ public class Cuadrado implements Geometria{
     public void MostrarInformacion(){
         System.out.println("Tipo de figura: " + this.tip + "\nALTURA: " + this.alto +
         "\nANCHO: " + this.ancho + "\nAREA: " + this.area + "\nPERIMETRO: " + this.perimetro);
-    }
-    public void MostrarCirculo(){
-    }
-    public void MostrarTriangulo(){
     }
 }

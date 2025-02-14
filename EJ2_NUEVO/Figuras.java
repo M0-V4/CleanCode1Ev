@@ -1,16 +1,18 @@
 package EJ2_NUEVO;
 
 public class Figuras{
-    private tipo tipos;
+    private Tipo tipos;
     Geometria geo;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Aqui es donde el programa ejecutara lo pedido por el usuario, y con ello cojiendo la variable del objeto geo para que hacer que funcione
     public Figuras(double Altura, double Anchura, int sele){
         for(Tipo t : Tipo.values()){
             if(t.getValores() == sele){
-                if(t.equals(tipo.CIRCULO)){
+                if(t.equals(Tipo.CIRCULO)){
                     geo = new Circulo();
-                }else if(t.equals(tipo.CUADRADO)){
+                }else if(t.equals(Tipo.CUADRADO)){
                     geo = new Cuadrado();
-                }else if(t.equals(tipo.TRIANGULO)){
+                }else if(t.equals(Tipo.TRIANGULO)){
                     geo = new Triangulo();
                 }
                 break;
@@ -22,6 +24,8 @@ public class Figuras{
         geo.Mostrar();
         geo.MostrarInformacion();
     }
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Aqui se mostrara la informacion del objeto geo    
     public void MostrarInfo(){
         geo.Mostrar();
         geo.MostrarInformacion();
