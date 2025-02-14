@@ -6,7 +6,7 @@ public class Circulo implements Geometria{
     private int radio = 0;
     private double area;
     private double perimetro;
-    private tipo tip = tipo.CIRCULO;
+    private Tipo tip = Tipo.CIRCULO;
     @Override
     public void Medidas(double ancho, double alto){
         this.alto = alto;

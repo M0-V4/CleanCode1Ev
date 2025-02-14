@@ -5,7 +5,7 @@ public class Triangulo implements Geometria{
     private double alto = 0;
     private double area;
     private double perimetro;
-    private tipo tip = tipo.TRIANGULO;
+    private Tipo tip = Tipo.TRIANGULO;
     public void Medidas(double ancho, double alto){
         this.alto = alto;
         this.ancho = ancho;

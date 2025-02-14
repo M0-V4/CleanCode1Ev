@@ -5,7 +5,7 @@ public class Cuadrado implements Geometria{
     private double alto = 0;
     private double area;
     private double perimetro;
-    private tipo tip = tipo.CUADRADO;
+    private Tipo tip = Tipo.CUADRADO;
     @Override
     public void Medidas(double ancho, double alto){
         this.ancho = ancho;

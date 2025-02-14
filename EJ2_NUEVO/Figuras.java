@@ -4,7 +4,7 @@ public class Figuras{
     private tipo tipos;
     Geometria geo;
     public Figuras(double Altura, double Anchura, int sele){
-        for(tipo t : tipo.values()){
+        for(Tipo t : Tipo.values()){
             if(t.getValores() == sele){
                 if(t.equals(tipo.CIRCULO)){
                     geo = new Circulo();

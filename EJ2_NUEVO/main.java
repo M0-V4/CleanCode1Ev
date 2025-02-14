@@ -3,10 +3,10 @@ package EJ2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class main {
-    public static void menu(boolean guardado){
+public class Main {
+    public static void Menu(boolean guardado){
         System.out.println("[-----[GEOMETRIA GAME]-----]");
-        for(tipo tip : tipo.values()){
+        for(Tipo tip : Tipo.values()){
             System.out.println(tip.getValores()+ ") " + tip);
         }
         if(guardado){
@@ -15,14 +15,14 @@ public class main {
             System.out.print("4) FIGURAS ALEATORIAS\n5) SALIR\nC: ");
         }
     }
-    public static void main(String [] args){
+    public static void Main(String [] args){
         int sele = 0;
         Scanner sr = new Scanner(System.in);
         Figuras geo;
         boolean guardado = false;
         Figuras[] geoLis = new Figuras[0];
         do { 
-            menu(guardado);    
+            Menu(guardado);    
             sele = sr.nextInt();
             System.out.print("La altuara de la figura: ");
             double altura = sr.nextDouble();

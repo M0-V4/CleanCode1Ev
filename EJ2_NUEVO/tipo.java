@@ -1,9 +1,9 @@
 package EJ2;
 
-public enum tipo {
+public enum Tipo {
     TRIANGULO(1), CUADRADO(2), CIRCULO(3);
     private int valores;
-    tipo(int valores){
+    Tipo(int valores){
         this.valores = valores;
     }
     public int getValores(){
